@@ -165,7 +165,11 @@ const CardTitle = styled.h3`
   color: #da4ea2;
   position: absolute;
   bottom: 190px;
-  @media only screen and (max-width: 420px) {
+  @media only screen and (max-width: 390px) {
+    font-size: 0.8rem;
+    top: -110px;
+  }
+  @media only screen and (max-width: 420px) and (min-width: 391px) {
     font-size: 1rem;
     top: -110px;
   }
