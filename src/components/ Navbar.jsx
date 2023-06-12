@@ -14,7 +14,7 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-  width: 1400px;
+  width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,7 +37,7 @@ const Links = styled.div`
 `;
 
 const Logo = styled.img`
-  height: 50px;
+  height: 40px;
   @media only screen and (max-width: 767px) {
     height: 25px;
   }

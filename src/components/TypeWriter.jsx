@@ -39,11 +39,11 @@ const Typewriter = () => {
   const [length, setLength] = useState(0);
 
   const words = [
-    "Web Developer",
-    "Frontend Developer",
-    "Backend Developer",
-    "FullStack Developer",
-    "Software Engineer",
+    "Web Developer.",
+    "Frontend Developer.",
+    "Backend Developer.",
+    "FullStack Developer.",
+    "Software Engineer.",
   ];
   const delay = 200;
 

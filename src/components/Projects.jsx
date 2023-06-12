@@ -18,7 +18,7 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-  width: 1400px;
+  width: 1200px;
   display: flex;
   justify-content: space-between;
 
@@ -57,15 +57,21 @@ const List = styled.ul`
 `;
 
 const ListItem = styled.li`
-  font-size: 90px;
+  font-size: 4.5rem;
   font-weight: bold;
   cursor: pointer;
   color: transparent;
   -webkit-text-stroke: 1px white;
   position: relative;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 420px) {
     font-size: 24px;
+    color: white;
+    -webkit-text-stroke: 0px;
+  }
+
+  @media only screen and (max-width: 768px) and (min-width: 422px) {
+    font-size: 35px;
     color: white;
     -webkit-text-stroke: 0px;
   }

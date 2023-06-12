@@ -55,15 +55,16 @@ const Text = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 74px;
+  font-size: 64px;
+  @media only screen and (max-width: 420px) {
+    text-align: center;
+    font-size: 28px;
+  }
+  @media only screen and (max-width: 768px) and (min-width: 422px) {
+    text-align: center;
+    font-size: 44px;
+  }
 
-  @media only screen and (max-width: 767px) {
-    text-align: center;
-    font-size: 34px;
-  }
-  @media only screen and (max-width: 768px) {
-    text-align: center;
-  }
   @media only screen and (max-width: 1024px) and (min-width: 769px) {
     text-align: center;
   }
@@ -81,31 +82,35 @@ const Line = styled.img`
 
 const Subtitle = styled.h2`
   color: #da4ea2;
-  @media only screen and (max-width: 767px) {
-    font-size: 15px;
+
+  @media only screen and (max-width: 420px) {
+    font-size: 20px;
   }
-  @media only screen and (max-width: 768px) {
-    font-size: 15px;
-  }
+
   @media only screen and (max-width: 1024px) and (min-width: 769px) {
-    display: 15px;
+    font-size: 30px;
   }
 `;
 
 const Desc = styled.p`
-  font-size: 24px;
-  line-height: 1.5;
+  font-size: 1.2rem;
+  line-height: 1.2;
   color: lightgray;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 420px) {
     padding: 20px;
     text-align: center;
     font-size: 14px;
   }
-
+  @media only screen and (max-width: 768px) and (min-width: 422px) {
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+  }
   @media only screen and (max-width: 1024px) and (min-width: 769px) {
     padding: 20px;
     text-align: center;
+    font-size: 24px;
   }
 `;
 
@@ -133,7 +138,7 @@ const TextImage = styled.div`
 
 const Skill = styled.span`
   color: #da4ea2;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   @media only screen and (max-width: 765px) {
     font-size: 1rem;
   }
@@ -165,14 +170,11 @@ const SkillImg = styled.img`
   height: 80px;
   object-fit: contain;
   padding: 10px;
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 420px) {
     width: 20px;
     height: 20px;
   }
-  @media only screen and (max-width: 768px) {
-    width: 40px;
-    height: 40px;
-  }
+
   @media only screen and (max-width: 1024px) and (min-width: 769px) {
     width: 60px;
     height: 60px;

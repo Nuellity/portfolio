@@ -108,7 +108,8 @@ const CarouselContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 25rem;
+  width: 36rem;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -116,6 +117,18 @@ const CarouselContainer = styled.div`
   right: 0;
   margin: auto;
   overflow: hidden;
+  @media only screen and (max-width: 420px) {
+    height: 17rem;
+    width: 22rem;
+  }
+  @media only screen and (max-width: 768px) and (min-width: 422px) {
+    height: 25rem;
+    width: 40rem;
+  }
+  @media only screen and (max-width: 1024px) and (min-width: 769px) {
+    height: 35rem;
+    width: 45rem;
+  }
 `;
 
 const CarouselWrapper = styled.div`
@@ -128,30 +141,43 @@ const CarouselWrapper = styled.div`
 const CarouselCard = styled.div`
   position: relative;
   display: flex;
+  border-radius: 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-shrink: 0;
   width: 100%;
-  height: 100%;
+  height: 20rem;
   background-color: #f8f8f8;
-  border-radius: 20px;
   margin: auto;
 `;
 
 const CardImage = styled.img`
-  width: 100%;
+  width: inherit;
   height: 100%;
   object-fit: contain;
   border-radius: 20px;
 `;
 
 const CardTitle = styled.h3`
-  font-size: 24px;
+  font-size: 1.4rem;
   color: #da4ea2;
   position: absolute;
-  bottom: 200px;
+  bottom: 190px;
+  @media only screen and (max-width: 420px) {
+    font-size: 1rem;
+    top: -110px;
+  }
+  @media only screen and (max-width: 768px) and (min-width: 422px) {
+    font-size: 1.6rem;
+    top: -100px;
+  }
+
+  @media only screen and (max-width: 1024px) and (min-width: 769px) {
+    font-size: 1.8rem;
+    top: -130px;
+  }
 `;
 
 const NextButton = styled.button`
@@ -161,6 +187,7 @@ const NextButton = styled.button`
   border: none;
   cursor: pointer;
   background-color: inherit;
+  z-index: 1;
 `;
 
 const PrevButton = styled.button`
@@ -169,6 +196,7 @@ const PrevButton = styled.button`
   border: none;
   cursor: pointer;
   background-color: inherit;
+  z-index: 1;
 `;
 
 const ArrowImg = styled.img`
@@ -182,28 +210,51 @@ const ProjectLinks = styled.div`
   justify-content: space-between;
   width: 300px;
   position: absolute;
-  top: 200px;
+  top: 150px;
+  @media only screen and (max-width: 420px) {
+    width: 10rem;
+    top: -10px;
+  }
+  @media only screen and (max-width: 768px) and (min-width: 422px) {
+    top: 32px;
+  }
+
+  @media only screen and (max-width: 1024px) and (min-width: 769px) {
+    top: 55px;
+  }
 `;
 
 const Link = styled.img`
   width: 3rem;
   height: 3rem;
+  @media only screen and (max-width: 420px) {
+    width: 2rem;
+    height: 2rem;
+  }
 `;
 
 const Desc = styled.p`
-  font-size: 20px;
+  font-size: 1.2em;
   line-height: 1.2;
   color: lightgray;
   position: absolute;
-  bottom: 45px;
-  @media only screen and (max-width: 768px) {
-    padding: 20px;
-    text-align: center;
+  text-align: center;
+  bottom: 100px;
+
+  @media only screen and (max-width: 420px) {
+    font-size: 0.7rem;
+    top: -85px;
+  }
+  @media only screen and (max-width: 768px) and (min-width: 422px) {
+    font-size: 1.2rem;
+    top: -80px;
+    padding: 10px;
   }
 
   @media only screen and (max-width: 1024px) and (min-width: 769px) {
-    padding: 20px;
-    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    top: -100px;
   }
 `;
 
@@ -243,7 +294,7 @@ function Dashboard() {
         <Link src="./images/github.png" />
         <Link src="./images/link.png" />
       </ProjectLinks>
-      <CardTitle>CONTENT MANAGEMMENT SYSTEM FOR ONLINE STORE</CardTitle>
+      <CardTitle>CONTENT MANAGEMENT SYSTEM FOR ONLINE STORE</CardTitle>
       <Desc>
         Achieved remarkable results in optimizing order processing efficiency
         for the online store. Leveraged cutting-edge packages like Mui, Redux,

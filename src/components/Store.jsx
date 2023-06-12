@@ -120,7 +120,8 @@ const CarouselContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 25rem;
+  width: 36rem;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -128,6 +129,18 @@ const CarouselContainer = styled.div`
   right: 0;
   margin: auto;
   overflow: hidden;
+  @media only screen and (max-width: 420px) {
+    height: 17rem;
+    width: 22rem;
+  }
+  @media only screen and (max-width: 768px) and (min-width: 422px) {
+    height: 25rem;
+    width: 40rem;
+  }
+  @media only screen and (max-width: 1024px) and (min-width: 769px) {
+    height: 35rem;
+    width: 45rem;
+  }
 `;
 
 const CarouselWrapper = styled.div`
@@ -140,35 +153,41 @@ const CarouselWrapper = styled.div`
 const CarouselCard = styled.div`
   position: relative;
   display: flex;
+  border-radius: 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-shrink: 0;
   width: 100%;
-  height: 100%;
+  height: 20rem;
   background-color: #f8f8f8;
-  border-radius: 20px;
   margin: auto;
 `;
 
 const CardImage = styled.img`
-  width: 100%;
+  width: inherit;
   height: 100%;
   object-fit: contain;
   border-radius: 20px;
 `;
 
 const CardTitle = styled.h3`
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: #da4ea2;
   position: absolute;
-  bottom: 200px;
-  @media only screen and (max-width: 768px) {
-    top: -140px;
+  bottom: 190px;
+  @media only screen and (max-width: 420px) {
+    font-size: 1rem;
+    top: -110px;
+  }
+  @media only screen and (max-width: 768px) and (min-width: 422px) {
+    font-size: 1.6rem;
+    top: -100px;
   }
 
   @media only screen and (max-width: 1024px) and (min-width: 769px) {
+    font-size: 1.9rem;
     top: -130px;
   }
 `;
@@ -203,37 +222,51 @@ const ProjectLinks = styled.div`
   justify-content: space-between;
   width: 300px;
   position: absolute;
-  top: 200px;
-  @media only screen and (max-width: 768px) {
-    top: -30px;
+  top: 150px;
+  @media only screen and (max-width: 420px) {
+    width: 10rem;
+    top: -10px;
+  }
+  @media only screen and (max-width: 768px) and (min-width: 422px) {
+    top: 22px;
   }
 
   @media only screen and (max-width: 1024px) and (min-width: 769px) {
-    top: -1px;
+    top: 42px;
   }
 `;
 
 const Link = styled.img`
   width: 3rem;
   height: 3rem;
+  @media only screen and (max-width: 420px) {
+    width: 2rem;
+    height: 2rem;
+  }
 `;
 
 const Desc = styled.p`
-  font-size: 1.25em;
+  font-size: 1.2em;
   line-height: 1.2;
   color: lightgray;
   position: absolute;
-  bottom: 80px;
-  @media only screen and (max-width: 768px) {
-    padding: 20px;
-    text-align: center;
-    top: -120px;
+  text-align: center;
+  bottom: 100px;
+
+  @media only screen and (max-width: 420px) {
+    font-size: 0.7rem;
+    top: -85px;
+  }
+  @media only screen and (max-width: 768px) and (min-width: 422px) {
+    font-size: 1.2rem;
+    top: -80px;
+    padding: 10px;
   }
 
   @media only screen and (max-width: 1024px) and (min-width: 769px) {
-    padding: 20px;
-    text-align: center;
-    top: -110px;
+    font-size: 1.5rem;
+    padding: 10px;
+    top: -100px;
   }
 `;
 

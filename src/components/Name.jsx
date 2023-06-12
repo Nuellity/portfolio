@@ -19,7 +19,7 @@ const Section = styled.div`
 const Container = styled.div`
   height: 100%;
   scroll-snap-align: center;
-  width: 1400px;
+  width: 1200px;
   display: flex;
   justify-content: space-between;
 
@@ -55,7 +55,7 @@ const Text = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 74px;
+  font-size: 64px;
   @media only screen and (max-width: 767px) {
     text-align: center;
     font-size: 34px;
@@ -87,7 +87,7 @@ const Subtitle = styled.h2`
 `;
 
 const Desc = styled.p`
-  font-size: 24px;
+  font-size: 18px;
   color: lightgray;
   line-height: 1.5;
   @media only screen and (max-width: 767px) {
@@ -132,8 +132,8 @@ const TextImage = styled.div`
 `;
 
 const Img = styled.img`
-  width: 800px;
-  height: 600px;
+  width: 500px;
+  height: 400px;
   object-fit: contain;
   position: absolute;
   top: 0;
@@ -187,9 +187,9 @@ function Name() {
         <TextImage>
           <Canvas>
             <OrbitControls enableZoom={false} autoRotate />
-            <ambientLight intensity={1.2} />
+            <ambientLight intensity={1.5} />
             <directionalLight position={[3, 2, 1]} />
-            <Sphere args={[1, 200, 200]} scale={2.4}>
+            <Sphere args={[1, 200, 200]} scale={2.2}>
               <MeshDistortMaterial
                 color="#3d1c56"
                 attach="material"
