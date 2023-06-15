@@ -28,26 +28,85 @@ const CarouselContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25rem;
-  width: 36rem;
+  height: 20rem;
+  width: 33rem;
   position: absolute;
+  background-color: inherit;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
   overflow: hidden;
-  @media only screen and (max-width: 420px) {
+
+  @media only screen and (max-width: 280px) {
+    height: 8.3rem;
+    width: 15rem;
+    top: -500px;
+  }
+
+  @media only screen and (max-width: 320px) and (min-width: 281px) {
+    height: 9.5rem;
+    width: 17.2rem;
+    top: -500px;
+  }
+
+  @media only screen and (min-width: 360px) and (max-width: 360px) and (min-height: 640px) and (max-height: 640px) {
+    height: 10rem;
+    width: 18rem;
+    top: -450px;
+  }
+
+  @media only screen and (min-width: 360px) and (max-width: 360px) and (min-height: 740px) and (max-height: 740px) {
+    height: 10rem;
+    width: 18rem;
+    top: -600px;
+  }
+
+  @media only screen and (max-width: 375px) and (min-width: 361px) {
+    height: 11rem;
+    width: 20rem;
+    top: -500px;
+  }
+  @media only screen and (max-width: 393px) and (min-width: 376px) {
+    height: 11rem;
+    width: 20rem;
+    top: -750px;
+  }
+  @media only screen and (max-width: 420px) and (min-width: 395px) {
+    height: 11rem;
+    width: 20rem;
+    top: -800px;
+  }
+  @media only screen and (max-width: 540px) and (min-width: 422px) {
+    height: 15rem;
+    width: 27rem;
+    top: -450px;
+  }
+  @media only screen and (max-width: 712px) and (min-width: 541px) {
+    height: 15rem;
+    width: 27rem;
+    top: -900px;
+  }
+  @media only screen and (max-width: 768px) and (min-width: 713px) {
+    height: 15rem;
+    width: 27rem;
+    top: -840px;
+  }
+  @media only screen and (max-width: 820px) and (min-width: 769px) {
+    height: 15rem;
+    width: 27rem;
+    top: -1050px;
+  }
+  @media only screen and (max-width: 912px) and (min-width: 821px) {
+    height: 15rem;
+    width: 27rem;
+    top: -1300px;
+  }
+  @media only screen and (max-width: 1026px) and (min-width: 1024px) {
     height: 17rem;
-    width: 22rem;
-  }
-  @media only screen and (max-width: 768px) and (min-width: 422px) {
-    height: 25rem;
-    width: 40rem;
-  }
-  @media only screen and (max-width: 1024px) and (min-width: 769px) {
-    height: 38rem;
-    width: 45rem;
+    width: 30.5rem;
+    top: -1350px;
   }
 `;
 
@@ -64,11 +123,10 @@ const CarouselCard = styled.div`
   border-radius: 20px;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   text-align: center;
   flex-shrink: 0;
   width: 100%;
-  height: 20rem;
+  height: 100%;
   background-color: #f8f8f8;
   margin: auto;
 `;
@@ -77,26 +135,22 @@ const CardImage = styled.img`
   width: inherit;
   height: 100%;
   object-fit: contain;
-  border-radius: 20px;
+  border-radius: 1.25rem;
 `;
 
 const CardTitle = styled.h3`
   font-size: 1.4rem;
   color: #da4ea2;
-  position: absolute;
-  bottom: 190px;
+  cursor: pointer;
   @media only screen and (max-width: 420px) {
     font-size: 1rem;
-    top: -110px;
-  }
-  @media only screen and (max-width: 768px) and (min-width: 422px) {
-    font-size: 1.6rem;
-    top: -100px;
   }
 
+  @media only screen and (max-width: 768px) and (min-width: 422px) {
+    font-size: 1.1rem;
+  }
   @media only screen and (max-width: 1024px) and (min-width: 769px) {
-    font-size: 1.9rem;
-    top: -130px;
+    font-size: 1.2rem;
   }
 `;
 
@@ -117,6 +171,11 @@ const PrevButton = styled.button`
   cursor: pointer;
   background-color: inherit;
   z-index: 1;
+  @media only screen and (max-width: 1024px) and (min-width: 769px) {
+    height: 15rem;
+    justify-content: flex-start;
+    z-index: 0;
+  }
 `;
 
 const ArrowImg = styled.img`
@@ -127,29 +186,80 @@ const ArrowImg = styled.img`
 
 const ProjectLinks = styled.div`
   display: flex;
-  justify-content: space-between;
-  width: 300px;
-  position: absolute;
-  top: 150px;
-  @media only screen and (max-width: 420px) {
-    width: 10rem;
-    top: -10px;
-  }
+  justify-content: space-around;
+  width: 100%;
   @media only screen and (max-width: 768px) and (min-width: 422px) {
-    top: 32px;
+    width: 70%;
   }
-
   @media only screen and (max-width: 1024px) and (min-width: 769px) {
-    top: 55px;
+    width: 80%;
   }
 `;
 
 const Link = styled.img`
   width: 3rem;
   height: 3rem;
+
   @media only screen and (max-width: 420px) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  @media only screen and (max-width: 768px) and (min-width: 422px) {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+
+  @media only screen and (max-width: 1024px) and (min-width: 769px) {
     width: 2rem;
     height: 2rem;
+  }
+`;
+
+const Details = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow: hidden;
+  padding-top: 2rem;
+  align-items: center;
+
+  @media only screen and (max-width: 320px) {
+    top: -40px;
+  }
+
+  @media only screen and (min-width: 360px) and (max-width: 360px) and (min-height: 640px) and (max-height: 640px) {
+    top: 0;
+  }
+
+  @media only screen and (min-width: 360px) and (max-width: 360px) and (min-height: 740px) and (max-height: 740px) {
+    top: -60px;
+  }
+
+  @media only screen and (max-width: 375px) and (min-width: 361px) {
+    top: -20px;
+  }
+  @media only screen and (max-width: 420px) and (min-width: 376px) {
+    top: -80px;
+  }
+  @media only screen and (max-width: 540px) and (min-width: 422px) {
+    top: 50px;
+  }
+  @media only screen and (max-width: 768px) and (min-width: 541px) {
+    top: -65px;
+  }
+  @media only screen and (max-width: 820px) and (min-width: 769px) {
+    top: -140px;
+  }
+  @media only screen and (max-width: 912px) and (min-width: 821px) {
+    top: -185px;
+  }
+  @media only screen and (max-width: 1026px) and (min-width: 1024px) {
+    top: -220px;
   }
 `;
 
@@ -157,24 +267,18 @@ const Desc = styled.p`
   font-size: 1.2em;
   line-height: 1.2;
   color: lightgray;
-  position: absolute;
   text-align: center;
-  bottom: 100px;
-
+  padding: 0.3rem 0;
   @media only screen and (max-width: 420px) {
-    font-size: 0.7rem;
-    top: -85px;
+    font-size: 0.8rem;
+    padding: 0 1rem;
   }
   @media only screen and (max-width: 768px) and (min-width: 422px) {
-    font-size: 1.2rem;
-    top: -80px;
-    padding: 10px;
+    font-size: 0.8rem;
+    padding: 0 1rem;
   }
-
   @media only screen and (max-width: 1024px) and (min-width: 769px) {
-    font-size: 1.5rem;
-    padding: 10px;
-    top: -100px;
+    font-size: 1em;
   }
 `;
 
@@ -195,33 +299,57 @@ function Weather() {
 
   return (
     <>
-      <CarouselContainer>
-        <CarouselWrapper activeIndex={activeIndex}>
-          {projects.map((project) => (
-            <CarouselCard key={project.id}>
-              <CardImage src={project.image} />
-            </CarouselCard>
-          ))}
-        </CarouselWrapper>
-        <PrevButton onClick={handlePrevClick}>
-          <ArrowImg src="./images/left.png" />
-        </PrevButton>
-        <NextButton onClick={handleNextClick}>
-          <ArrowImg src="./images/right.png" />
-        </NextButton>
-      </CarouselContainer>
-      <ProjectLinks>
-        <Link src="./images/github.png" />
-        <Link src="./images/link.png" />
-      </ProjectLinks>
-      <CardTitle>REAL-TIME WEATHER APP</CardTitle>
-      <Desc>
-        The Weather React app provides users with real-time weather data for any
-        city worldwide. Using the OpenWeatherMap API and packages like Axios,
-        HTML, and CSS, the app offers a user-friendly interface. It goes beyond
-        functionality by dynamically changing the background to match the
-        current weather conditions, enhancing the visual experience.
-      </Desc>
+      <div>
+        <CarouselContainer>
+          <CarouselWrapper activeIndex={activeIndex}>
+            {projects.map((project) => (
+              <CarouselCard key={project.id}>
+                <CardImage src={project.image} />
+              </CarouselCard>
+            ))}
+          </CarouselWrapper>
+          <PrevButton onClick={handlePrevClick}>
+            <ArrowImg src="./images/left.png" />
+          </PrevButton>
+          <NextButton onClick={handleNextClick}>
+            <ArrowImg src="./images/right.png" />
+          </NextButton>
+        </CarouselContainer>
+        <Details>
+          <a
+            href="https://mern-gadget-store.onrender.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <CardTitle>REAL-TIME WEATHER APP</CardTitle>
+          </a>
+          <Desc>
+            The Weather React app provides users with real-time weather data for
+            any city worldwide. Using the OpenWeatherMap API and packages like
+            Axios, HTML, and CSS, the app offers a user-friendly interface. It
+            goes beyond functionality by dynamically changing the background to
+            match the current weather conditions, enhancing the visual
+            experience.
+          </Desc>
+          <ProjectLinks>
+            <a
+              href="https://github.com/Nuellity/react-weather-api"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Link src="./images/github.png" />
+            </a>
+            <a
+              href="https://weather-app-l469.onrender.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Link src="./images/link.png" />
+            </a>
+          </ProjectLinks>
+        </Details>
+      </div>
     </>
   );
 }

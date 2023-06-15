@@ -18,7 +18,7 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-  width: 1200px;
+  width: 75rem;
   display: flex;
   justify-content: space-between;
 
@@ -40,12 +40,12 @@ const Left = styled.div`
   @media only screen and (max-width: 768px) {
     flex: 1;
     padding: 20px;
-    justify-content: center;
+    align-items: flex-start;
   }
   @media only screen and (max-width: 1024px) and (min-width: 769px) {
     flex: 1;
     padding: 20px;
-    justify-content: center;
+    align-items: flex-start;
   }
 `;
 
@@ -71,7 +71,7 @@ const ListItem = styled.li`
   }
 
   @media only screen and (max-width: 768px) and (min-width: 422px) {
-    font-size: 35px;
+    font-size: 2rem;
     color: white;
     -webkit-text-stroke: 0px;
   }
@@ -112,13 +112,17 @@ const Right = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media only screen and (max-width: 1024px) and (min-width: 769px) {
+    flex: 1;
+    display: block;
+  }
 `;
 
 function Projects() {
   const [work, setWork] = useState("E-commerce Site");
 
   return (
-    <Section>
+    <Section id="projects">
       <Container>
         <Left>
           <List>

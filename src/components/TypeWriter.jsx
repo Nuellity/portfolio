@@ -21,7 +21,10 @@ const Text = styled.span`
   white-space: nowrap;
   letter-spacing: 0.15em;
   animation: typing 2s steps(${(props) => props.length}, end) forwards;
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 280px) {
+    font-size: 1rem;
+  }
+  @media only screen and (max-width: 767px) and (min-width: 281px) {
     font-size: 18px;
   }
 `;

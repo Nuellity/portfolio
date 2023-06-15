@@ -43,9 +43,35 @@ const Text = styled.div`
   justify-content: center;
   gap: 20px;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 280px) {
     flex: 1;
     align-items: center;
+    justify-content: flex-start;
+    padding-top: 3rem;
+  }
+  @media only screen and (max-width: 393px) and (min-width: 281px) {
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 8rem;
+  }
+  @media only screen and (max-width: 420px) and (min-width: 395px) {
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 8rem;
+  }
+  @media only screen and (max-width: 712px) {
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 8rem;
+  }
+  @media only screen and (max-width: 768px) and (min-width: 713px) {
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 8rem;
   }
 
   @media only screen and (max-width: 1024px) and (min-width: 769px) {
@@ -56,12 +82,10 @@ const Text = styled.div`
 
 const Title = styled.h1`
   font-size: 64px;
-  @media only screen and (max-width: 767px) {
-    text-align: center;
-    font-size: 34px;
-  }
+
   @media only screen and (max-width: 768px) {
     text-align: center;
+    font-size: 34px;
   }
 
   @media only screen and (max-width: 1024px) and (min-width: 769px) {
@@ -81,7 +105,10 @@ const Line = styled.img`
 
 const Subtitle = styled.h2`
   color: #da4ea2;
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 280px) {
+    font-size: 1rem;
+  }
+  @media only screen and (max-width: 767px) and (min-width: 281px) {
     font-size: 18px;
   }
 `;
@@ -104,17 +131,6 @@ const Desc = styled.p`
     padding: 20px;
     text-align: center;
   }
-`;
-
-const Button = styled.button`
-  background-color: #da4ea2;
-  color: white;
-  font-weight: 500;
-  width: 100px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
 `;
 
 const TextImage = styled.div`
@@ -160,7 +176,47 @@ const Img = styled.img`
   }
 `;
 
+const StyledButton = styled.button`
+  width: 7.25rem;
+  padding: 10px;
+  background-color: #da4ea2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  &:hover {
+    color: black;
+  }
+
+  &:after {
+    content: "";
+    background: purple;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+  }
+
+  &:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+`;
+
 function Name() {
+  const scrollToSection = (location) => {
+    const section = document.getElementById(location);
+    section.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <Section>
       <Navbar />
@@ -182,7 +238,9 @@ function Name() {
             and adapting to new technologies to enhance the user experience.
             Let's work together to bring your ideas to life!
           </Desc>
-          <Button>Learn More</Button>
+          <StyledButton onClick={() => scrollToSection("skills")}>
+            Learn More
+          </StyledButton>
         </Text>
         <TextImage>
           <Canvas>

@@ -43,14 +43,61 @@ const Text = styled.div`
   justify-content: center;
   gap: 20px;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 280px) {
     align-items: center;
-    text-align: center;
-    padding: 0;
+    justify-content: flex-start;
+    padding-top: 5rem;
   }
-  @media only screen and (max-width: 1024px) and (min-width: 769px) {
+  @media only screen and (max-width: 320px) and (min-width: 281px) {
+    justify-content: flex-start;
     align-items: center;
-    text-align: center;
+    padding-top: 1rem;
+  }
+  @media only screen and (min-width: 360px) and (min-width: 321px) {
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2rem;
+  }
+  @media only screen and (max-width: 393px) and (min-width: 361px) {
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 4rem;
+  }
+  @media only screen and (max-width: 420px) and (min-width: 395px) {
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 4rem;
+  }
+  @media only screen and (max-width: 540px) and (min-width: 421px) {
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 1rem;
+  }
+  @media only screen and (max-width: 712px) and (min-width: 541px) {
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 2rem;
+  }
+  @media only screen and (max-width: 768px) and (min-width: 713px) {
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 2rem;
+  }
+
+  @media only screen and (max-width: 820px) and (min-width: 769px) {
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 2rem;
+  }
+  @media only screen and (max-width: 912px) and (min-width: 821px) {
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 2rem;
+  }
+  @media only screen and (max-width: 1024px) and (min-width: 913px) {
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 2rem;
   }
 `;
 
@@ -58,14 +105,27 @@ const Title = styled.h1`
   font-size: 64px;
   @media only screen and (max-width: 420px) {
     text-align: center;
-    font-size: 28px;
+    font-size: 23px;
   }
-  @media only screen and (max-width: 768px) and (min-width: 422px) {
+  @media only screen and (max-width: 540px) and (min-width: 421px) {
+    text-align: center;
+    font-size: 32px;
+  }
+  @media only screen and (max-width: 768px) and (min-width: 541px) {
+    text-align: center;
+    font-size: 44px;
+  }
+  @media only screen and (max-width: 820px) and (min-width: 769px) {
     text-align: center;
     font-size: 44px;
   }
 
-  @media only screen and (max-width: 1024px) and (min-width: 769px) {
+  @media only screen and (max-width: 912px) and (min-width: 821px) {
+    text-align: center;
+    font-size: 54px;
+  }
+
+  @media only screen and (max-width: 1024px) and (min-width: 913px) {
     text-align: center;
   }
 `;
@@ -84,10 +144,23 @@ const Subtitle = styled.h2`
   color: #da4ea2;
 
   @media only screen and (max-width: 420px) {
+    font-size: 15px;
+  }
+  @media only screen and (max-width: 540px) and (min-width: 421px) {
+    text-align: center;
+    font-size: 18px;
+  }
+  @media only screen and (max-width: 820px) and (min-width: 541px) {
+    text-align: center;
     font-size: 20px;
   }
 
-  @media only screen and (max-width: 1024px) and (min-width: 769px) {
+  @media only screen and (max-width: 912px) and (min-width: 821px) {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  @media only screen and (max-width: 1024px) and (min-width: 913px) {
     font-size: 30px;
   }
 `;
@@ -100,29 +173,34 @@ const Desc = styled.p`
   @media only screen and (max-width: 420px) {
     padding: 20px;
     text-align: center;
+    font-size: 10px;
+  }
+  @media only screen and (max-width: 540px) and (min-width: 421px) {
+    padding: 20px;
+    text-align: center;
     font-size: 14px;
   }
-  @media only screen and (max-width: 768px) and (min-width: 422px) {
+  @media only screen and (max-width: 768px) and (min-width: 541px) {
     padding: 20px;
     text-align: center;
     font-size: 20px;
   }
-  @media only screen and (max-width: 1024px) and (min-width: 769px) {
+  @media only screen and (max-width: 820px) and (min-width: 769px) {
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  @media only screen and (max-width: 912px) and (min-width: 821px) {
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+  }
+  @media only screen and (max-width: 1024px) and (min-width: 913px) {
     padding: 20px;
     text-align: center;
     font-size: 24px;
   }
-`;
-
-const Button = styled.button`
-  background-color: #da4ea2;
-  color: white;
-  font-weight: 500;
-  width: 120px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
 `;
 
 const TextImage = styled.div`
@@ -139,10 +217,16 @@ const TextImage = styled.div`
 const Skill = styled.span`
   color: #da4ea2;
   font-size: 1.4rem;
-  @media only screen and (max-width: 765px) {
+  @media only screen and (max-width: 420px) {
+    font-size: 0.7rem;
+  }
+  @media only screen and (max-width: 768px) and (min-width: 421px) {
     font-size: 1rem;
   }
-  @media only screen and (max-width: 1024px) and (min-width: 769px) {
+  @media only screen and (max-width: 820px) and (min-width: 769px) {
+    font-size: 1.2rem;
+  }
+  @media only screen and (max-width: 1024px) and (min-width: 821px) {
     font-size: 1.5rem;
   }
 `;
@@ -153,11 +237,11 @@ const SkillContainer = styled.div`
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 420px) {
     justify-content: center;
-    padding: 0;
+    z-index: 1;
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 768px) and (min-width: 421px) {
     justify-content: center;
   }
   @media only screen and (max-width: 1024px) and (min-width: 769px) {
@@ -171,19 +255,71 @@ const SkillImg = styled.img`
   object-fit: contain;
   padding: 10px;
   @media only screen and (max-width: 420px) {
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
+  }
+  @media only screen and (max-width: 712px) and (min-width: 421px) {
+    width: 50px;
+    height: 50px;
+  }
+  @media only screen and (max-width: 768px) and (min-width: 713px) {
+    width: 50px;
+    height: 50px;
+  }
+  @media only screen and (max-width: 820px) and (min-width: 769px) {
+    width: 50px;
+    height: 50px;
   }
 
-  @media only screen and (max-width: 1024px) and (min-width: 769px) {
+  @media only screen and (max-width: 1024px) and (min-width: 821px) {
     width: 60px;
     height: 60px;
   }
 `;
 
+const StyledButton = styled.button`
+  width: 8rem;
+  padding: 10px;
+  background-color: #da4ea2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  &:hover {
+    color: black;
+  }
+
+  &:after {
+    content: "";
+    background: purple;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+  }
+
+  &:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+`;
+
 function Profile() {
+  const scrollToSection = (location) => {
+    const section = document.getElementById(location);
+    section.scrollIntoView({ behavior: "smooth" });
+  };
   return (
-    <Section>
+    <Section id="skills">
       <Container>
         <TextImage>
           <Canvas>
@@ -229,7 +365,9 @@ function Profile() {
               <SkillImg src={skill} key={id} />
             ))}
           </SkillContainer>
-          <Button>See My Projects</Button>
+          <StyledButton onClick={() => scrollToSection("projects")}>
+            See My Projects
+          </StyledButton>
         </Text>
       </Container>
     </Section>
