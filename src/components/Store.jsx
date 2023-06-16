@@ -163,9 +163,9 @@ const CarouselContainer = styled.div`
   @media only screen and (max-width: 393px) and (min-width: 376px) {
     height: 11rem;
     width: 22rem;
-    top: -750px;
+    top: -550px;
   }
-  @media only screen and (max-width: 420px) and (min-width: 395px) {
+  @media only screen and (max-width: 420px) and (min-width: 394px) {
     height: 11rem;
     width: 22rem;
     top: -800px;
@@ -333,9 +333,12 @@ const Details = styled.div`
   }
 
   @media only screen and (max-width: 375px) and (min-width: 361px) {
-    top: -20px;
+    top: 10px;
   }
-  @media only screen and (max-width: 420px) and (min-width: 376px) {
+  @media only screen and (max-width: 393px) and (min-width: 376px) {
+    top: -10px;
+  }
+  @media only screen and (max-width: 420px) and (min-width: 394px) {
     top: -80px;
   }
   @media only screen and (max-width: 540px) and (min-width: 422px) {

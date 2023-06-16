@@ -12,8 +12,28 @@ const Section = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  @media only screen and (max-width: 768px) {
-    height: 200vh;
+
+  @media only screen and (max-width: 280px) {
+    height: 180vh;
+  }
+  @media only screen and (max-width: 393px) and (min-width: 281px) {
+    height: 130vh;
+  }
+  @media only screen and (max-width: 420px) and (min-width: 394px) {
+    height: 110vh;
+  }
+  @media only screen and (max-width: 540px) and (min-width: 421px) {
+    height: 140vh;
+  }
+
+  @media only screen and (max-width: 712px) and (min-width: 541px) {
+    height: 80vh;
+  }
+  @media only screen and (max-width: 768px) and (min-width: 713px) {
+    height: 100vh;
+  }
+  @media only screen and (max-width: 1024px) and (min-width: 769px) {
+    height: 100vh;
   }
 `;
 const Container = styled.div`
@@ -52,8 +72,6 @@ const Text = styled.div`
   @media only screen and (max-width: 393px) and (min-width: 281px) {
     flex: 1;
     align-items: center;
-    justify-content: flex-start;
-    padding-top: 8rem;
   }
   @media only screen and (max-width: 420px) and (min-width: 395px) {
     flex: 1;
@@ -114,17 +132,13 @@ const Subtitle = styled.h2`
 `;
 
 const Desc = styled.p`
-  font-size: 18px;
+  font-size: 20px;
   color: lightgray;
   line-height: 1.5;
-  @media only screen and (max-width: 767px) {
-    padding: 20px;
-    text-align: center;
-    font-size: 15px;
-  }
   @media only screen and (max-width: 768px) {
     padding: 20px;
     text-align: center;
+    font-size: 15px;
   }
 
   @media only screen and (max-width: 1024px) and (min-width: 769px) {
@@ -144,6 +158,7 @@ const TextImage = styled.div`
   @media only screen and (max-width: 1024px) and (min-width: 769px) {
     flex: 1;
     width: 100%;
+    justify-content: flex-start;
   }
 `;
 
@@ -165,8 +180,8 @@ const Img = styled.img`
   }
 
   @media only screen and (max-width: 1024px) and (min-width: 769px) {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
   }
 
   @keyframes animate {

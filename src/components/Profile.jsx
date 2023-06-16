@@ -51,7 +51,7 @@ const Text = styled.div`
   @media only screen and (max-width: 320px) and (min-width: 281px) {
     justify-content: flex-start;
     align-items: center;
-    padding-top: 1rem;
+    padding-top: 4px;
   }
   @media only screen and (min-width: 360px) and (min-width: 321px) {
     justify-content: flex-start;
@@ -61,7 +61,7 @@ const Text = styled.div`
   @media only screen and (max-width: 393px) and (min-width: 361px) {
     align-items: center;
     justify-content: flex-start;
-    padding-top: 4rem;
+    padding-top: 2.5rem;
   }
   @media only screen and (max-width: 420px) and (min-width: 395px) {
     align-items: center;
@@ -105,7 +105,7 @@ const Title = styled.h1`
   font-size: 64px;
   @media only screen and (max-width: 420px) {
     text-align: center;
-    font-size: 23px;
+    font-size: 34px;
   }
   @media only screen and (max-width: 540px) and (min-width: 421px) {
     text-align: center;
@@ -113,11 +113,10 @@ const Title = styled.h1`
   }
   @media only screen and (max-width: 768px) and (min-width: 541px) {
     text-align: center;
-    font-size: 44px;
+    font-size: 34px;
   }
   @media only screen and (max-width: 820px) and (min-width: 769px) {
     text-align: center;
-    font-size: 44px;
   }
 
   @media only screen and (max-width: 912px) and (min-width: 821px) {
@@ -170,36 +169,26 @@ const Desc = styled.p`
   line-height: 1.2;
   color: lightgray;
 
-  @media only screen and (max-width: 420px) {
-    padding: 20px;
+  @media only screen and (max-width: 280px) {
+    padding: 10px;
     text-align: center;
-    font-size: 10px;
+    font-size: 11px;
   }
-  @media only screen and (max-width: 540px) and (min-width: 421px) {
+
+  @media only screen and (max-width: 320px) and (min-width: 281px) {
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+  }
+  @media only screen and (max-width: 768px) and (min-width: 321px) {
     padding: 20px;
     text-align: center;
     font-size: 14px;
   }
-  @media only screen and (max-width: 768px) and (min-width: 541px) {
-    padding: 20px;
-    text-align: center;
-    font-size: 20px;
-  }
-  @media only screen and (max-width: 820px) and (min-width: 769px) {
-    padding: 20px;
-    text-align: center;
-    font-size: 20px;
-  }
 
-  @media only screen and (max-width: 912px) and (min-width: 821px) {
+  @media only screen and (max-width: 1024px) and (min-width: 769px) {
     padding: 20px;
     text-align: center;
-    font-size: 20px;
-  }
-  @media only screen and (max-width: 1024px) and (min-width: 913px) {
-    padding: 20px;
-    text-align: center;
-    font-size: 24px;
   }
 `;
 
@@ -217,10 +206,10 @@ const TextImage = styled.div`
 const Skill = styled.span`
   color: #da4ea2;
   font-size: 1.4rem;
-  @media only screen and (max-width: 420px) {
+  @media only screen and (max-width: 280px) {
     font-size: 0.7rem;
   }
-  @media only screen and (max-width: 768px) and (min-width: 421px) {
+  @media only screen and (max-width: 768px) and (min-width: 281px) {
     font-size: 1rem;
   }
   @media only screen and (max-width: 820px) and (min-width: 769px) {
