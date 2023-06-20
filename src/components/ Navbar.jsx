@@ -194,13 +194,13 @@ function Navbar() {
             <ListItem>
               <SocialLinks>
                 <Link
-                  href="https://twitter.com/shingbaka"
+                  href="https://twitter.com/emmabhu"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <TwitterButton id="twitter" className="flex-center">
                     <Icon src="./images/twitter.png" alt="Twitter" />
-                    <Text>@shingbaka</Text>
+                    <Text>@emmabhu</Text>
                   </TwitterButton>
                 </Link>
                 <Link
