@@ -8,9 +8,8 @@ Our GitHub repository hosts a React portfolio app that effectively showcases my 
 
 <p float="left">
   <img src="https://i.imgur.com/nX0B0tI.jpg" width=400  style="border-radius: 10px;" />
-  <img src="https://i.imgur.com/nkQwKtm.jpg" height=300  style="border-radius: 10px;" />
 </p>
-
+https://github.com/Nuellity/portfolio/assets/108362417/c3e814e3-88ce-44d5-9ee6-35d5ca70e3fc
 ## Features
 
 - User-friendly frontend with a responsive design
@@ -113,3 +112,7 @@ Contributions are welcome! Please open an issue or a pull request if you have an
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/Nuellity/portfolio/blob/main/LICENSE) file for details.
+
+
+
+
