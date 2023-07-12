@@ -5,6 +5,7 @@
 Our GitHub repository hosts a React portfolio app that effectively showcases my skills as a developer. With a user-friendly interface and seamless navigation, it provides a comprehensive display of my projects, experience, and expertise. The app's dynamic design adapts to different screen sizes, offering an engaging experience. It incorporates interactive elements and animations to captivate users and guide them through my development journey. Whether you're an employer, collaborator, or simply curious about my work, this app offers a detailed overview of my capabilities. Together, let's redefine how developers present their skills and create a memorable portfolio experience.
 
 LINK: https://portfolio-pixk.onrender.com/
+
 VIDEO: https://youtu.be/8ej6r_28Mh0
 
 ## Screen Snapshots
