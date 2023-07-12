@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Store from "./Store";
 import Dashboard from "./Dashboard";
-import Weather from "./Weather";
+import Web3 from "./Web3";
 
-const data = ["E-commerce Site", "Admin C.M.S", "Weather Map"];
+const data = ["E-commerce Site", "Admin C.M.S", "Web3 Lottery"];
 
 const Section = styled.div`
   height: 100vh;
@@ -139,7 +139,7 @@ function Projects() {
           ) : work === "Admin C.M.S" ? (
             <Dashboard />
           ) : (
-            <Weather />
+            <Web3 />
           )}
         </Right>
       </Container>

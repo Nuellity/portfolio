@@ -411,12 +411,11 @@ function Dashboard() {
             <CardTitle>ADMIN ACCOUNT DASHBOARD</CardTitle>
           </a>
           <Desc>
-            Achieved remarkable results in optimizing order processing
-            efficiency for the online store. Leveraged cutting-edge packages
-            like Mui, Redux, Axios, Firebase, React Router, Recharts, and more.
-            Reduced processing time by an impressive 50%, resulting in enhanced
-            customer satisfaction. Demonstrated exceptional problem-solving
-            skills and a track record of delivering impactful solutions.
+            "Delivered impressive results in streamlining order processing for
+            an online store. Utilized cutting-edge tech tools like Mui, Redux,
+            Axios, Firebase, React Router, Recharts, and more. Slashed
+            processing time by 50%, boosting customer satisfaction. Proven
+            problem solver with a track record of impactful solutions."
           </Desc>
           <ProjectLinks>
             <a
