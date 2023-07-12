@@ -12,7 +12,6 @@ VIDEO: https://youtu.be/8ej6r_28Mh0
 
 <p float="left">
   <img src="https://i.imgur.com/nX0B0tI.jpg" width=400  style="border-radius: 10px;" />
-    <img src="https://i.imgur.com/BEUP5aO.jpg" height=300  style="border-radius: 10px;" />
 </p>
 
 ## Features
