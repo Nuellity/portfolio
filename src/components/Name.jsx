@@ -245,13 +245,13 @@ function Name() {
             </Subtitle>
           </WhatWeDo>
           <Desc>
-            I am a fullstack developer passionate about creating beautiful and
-            interactive web experiences. With a strong foundation in HTML, CSS,
-            Javscript and Python, I specialize in building responsive and
-            intuitive user interfaces using modern frameworks like React. I am
-            dedicated to delivering high-quality code and continuously learning
-            and adapting to new technologies to enhance the user experience.
-            Let's work together to bring your ideas to life!
+            I am a web3/fullstack developer passionate about creating beautiful
+            and interactive web experiences. With a strong foundation in HTML,
+            CSS, Javscript and Python, I specialize in building responsive and
+            intuitive user interfaces using modern frameworks like React/Next. I
+            am dedicated to delivering high-quality code and continuously
+            learning and adapting to new technologies to enhance the user
+            experience. Let's work together to bring your ideas to life!
           </Desc>
           <StyledButton onClick={() => scrollToSection("skills")}>
             Learn More

@@ -327,6 +327,7 @@ function Profile() {
           <Desc>
             With a diverse skill set encompassing <Skill>HTML</Skill>, {""}
             <Skill>CSS</Skill>, <Skill>JavaScript</Skill>,{" "}
+            <Skill>Typescript</Skill>, <Skill>Solidity</Skill>{" "}
             <Skill>Node.js</Skill>, <Skill>React</Skill>,{" "}
             <Skill>Express.js</Skill>, <Skill>Redux</Skill>,{" "}
             <Skill>MongoDB</Skill>, <Skill>Material-UI</Skill>,{" "}

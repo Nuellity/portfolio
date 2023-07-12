@@ -46,6 +46,7 @@ const Typewriter = () => {
     "Frontend Developer.",
     "Backend Developer.",
     "FullStack Developer.",
+    "Web3 Developer.",
     "Software Engineer.",
   ];
   const delay = 200;
