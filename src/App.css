@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 .app {
   height: 100vh;
   scroll-snap-type: y mandatory;
@@ -17,4 +16,10 @@
 
 .app::-webkit-scrollbar {
   display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .link {
+    display: none;
+  }
 }

@@ -47,10 +47,6 @@ const List = styled.ul`
   display: flex;
   gap: 20px;
   list-style: none;
-
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
 `;
 
 const ListItem = styled.li`
@@ -126,6 +122,9 @@ const LinkedInButton = styled(SocialButton)`
   ${Icon} {
     fill: #0e76a8;
   }
+  @media only screen and (max-width: 768px) {
+    display: block;
+  }
 `;
 
 const GitHubButton = styled(SocialButton)`
@@ -182,13 +181,23 @@ function Navbar() {
         <Links>
           <Logo src="./images/logo.png" />
           <List>
-            <ListItem onClick={() => scrollToSection("skills")}>
+            <ListItem
+              onClick={() => scrollToSection("skills")}
+              style={{ display: "none" }}
+              className="link"
+            >
               Skills
             </ListItem>
-            <ListItem onClick={() => scrollToSection("projects")}>
+            <ListItem
+              onClick={() => scrollToSection("projects")}
+              className="link"
+            >
               Projects
             </ListItem>
-            <ListItem onClick={() => scrollToSection("contact")}>
+            <ListItem
+              onClick={() => scrollToSection("contact")}
+              className="link"
+            >
               Contact Me
             </ListItem>
             <ListItem>
@@ -197,8 +206,9 @@ function Navbar() {
                   href="https://twitter.com/emmabhu"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="link"
                 >
-                  <TwitterButton id="twitter" className="flex-center">
+                  <TwitterButton id="twitter">
                     <Icon src="./images/twitter.png" alt="Twitter" />
                     <Text>@emmabhu</Text>
                   </TwitterButton>
@@ -208,7 +218,7 @@ function Navbar() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <LinkedInButton id="linkedin" className="flex-center">
+                  <LinkedInButton id="linkedin">
                     <Icon src="./images/linkedin.png" alt="LinkedIn" />
                     <Text>in/emmanuelabhulimhen</Text>
                   </LinkedInButton>
@@ -218,7 +228,7 @@ function Navbar() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <GitHubButton id="github" className="flex-center">
+                  <GitHubButton id="github">
                     <Icon src="./images/github.png" alt="GitHub" />
                     <Text>Nuellity</Text>
                   </GitHubButton>

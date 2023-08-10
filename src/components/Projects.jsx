@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Store from "./Store";
-import Dashboard from "./Dashboard";
 import Web3 from "./Web3";
+import AI from "./AI";
 
-const data = ["E-commerce Site", "Admin C.M.S", "Web3 Lottery"];
+const data = ["E-commerce Site", "Web3 Lottery", "3D AI Shirt"];
 
 const Section = styled.div`
   height: 100vh;
@@ -136,10 +136,10 @@ function Projects() {
         <Right>
           {work === "E-commerce Site" ? (
             <Store />
-          ) : work === "Admin C.M.S" ? (
-            <Dashboard />
-          ) : (
+          ) : work === "Web3 Lottery" ? (
             <Web3 />
+          ) : (
+            <AI />
           )}
         </Right>
       </Container>

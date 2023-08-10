@@ -4,103 +4,19 @@ import styled from "styled-components";
 const projects = [
   {
     id: 1,
-    image: "./images/admin/S1.png",
+    image: "https://imgur.com/oNNycfs.png",
   },
   {
     id: 2,
-    image: "./images/admin/S2.png",
+    image: "https://imgur.com/s01FC1N.png",
   },
   {
     id: 3,
-    image: "./images/admin/S3.png",
+    image: "https://imgur.com/U22xYsh.png",
   },
   {
     id: 4,
-    image: "./images/admin/S4.png",
-  },
-  {
-    id: 5,
-    image: "./images/admin/S5.png",
-  },
-  {
-    id: 6,
-    image: "./images/admin/S6.png",
-  },
-  {
-    id: 7,
-    image: "./images/admin/S7.png",
-  },
-  {
-    id: 8,
-    image: "./images/admin/S8.png",
-  },
-  {
-    id: 9,
-    image: "./images/admin/S9.png",
-  },
-  {
-    id: 10,
-    image: "./images/admin/S10.png",
-  },
-  {
-    id: 11,
-    image: "./images/admin/S11.png",
-  },
-  {
-    id: 12,
-    image: "./images/admin/S12.png",
-  },
-  {
-    id: 13,
-    image: "./images/admin/S13.png",
-  },
-  {
-    id: 14,
-    image: "./images/admin/S14.png",
-  },
-  {
-    id: 15,
-    image: "./images/admin/S15.png",
-  },
-  {
-    id: 16,
-    image: "./images/admin/S16.png",
-  },
-  {
-    id: 17,
-    image: "./images/admin/S17.png",
-  },
-  {
-    id: 18,
-    image: "./images/admin/S18.png",
-  },
-  {
-    id: 19,
-    image: "./images/admin/S19.png",
-  },
-  {
-    id: 20,
-    image: "./images/admin/S20.png",
-  },
-  {
-    id: 21,
-    image: "./images/admin/S21.png",
-  },
-  {
-    id: 22,
-    image: "./images/admin/S22.png",
-  },
-  {
-    id: 23,
-    image: "./images/admin/S23.png",
-  },
-  {
-    id: 24,
-    image: "./images/admin/S24.png",
-  },
-  {
-    id: 25,
-    image: "./images/admin/S25.png",
+    image: "https://imgur.com/zWXvJTY.png",
   },
 ];
 
@@ -111,7 +27,7 @@ const CarouselContainer = styled.div`
   height: 20rem;
   width: 33rem;
   position: absolute;
-  background: inherit;
+  background-color: inherit;
   top: 0;
   bottom: 0;
   left: 0;
@@ -120,8 +36,8 @@ const CarouselContainer = styled.div`
   overflow: hidden;
 
   @media only screen and (max-width: 280px) {
-    height: 8rem;
-    width: 14rem;
+    height: 8.3rem;
+    width: 15rem;
     top: -500px;
   }
 
@@ -154,8 +70,8 @@ const CarouselContainer = styled.div`
     top: -550px;
   }
   @media only screen and (max-width: 420px) and (min-width: 394px) {
-    height: 10rem;
-    width: 18rem;
+    height: 11rem;
+    width: 20rem;
     top: -800px;
   }
   @media only screen and (max-width: 540px) and (min-width: 422px) {
@@ -169,13 +85,13 @@ const CarouselContainer = styled.div`
     top: -900px;
   }
   @media only screen and (max-width: 768px) and (min-width: 713px) {
-    height: 14rem;
-    width: 25rem;
+    height: 15rem;
+    width: 27rem;
     top: -840px;
   }
   @media only screen and (max-width: 820px) and (min-width: 769px) {
-    height: 14rem;
-    width: 25rem;
+    height: 15rem;
+    width: 27rem;
     top: -1050px;
   }
   @media only screen and (max-width: 912px) and (min-width: 821px) {
@@ -185,7 +101,7 @@ const CarouselContainer = styled.div`
   }
   @media only screen and (max-width: 1026px) and (min-width: 1024px) {
     height: 17rem;
-    width: 34rem;
+    width: 30.5rem;
     top: -1350px;
   }
 `;
@@ -222,10 +138,6 @@ const CardTitle = styled.h3`
   font-size: 1.4rem;
   color: #da4ea2;
   cursor: pointer;
-  @media only screen and (max-width: 280px) {
-    font-size: 0.8rem;
-    padding: 12px;
-  }
   @media only screen and (max-width: 420px) {
     font-size: 1rem;
   }
@@ -323,6 +235,7 @@ const Details = styled.div`
   @media only screen and (min-width: 360px) and (max-width: 360px) and (min-height: 740px) and (max-height: 740px) {
     top: -60px;
   }
+
   @media only screen and (max-width: 375px) and (min-width: 361px) {
     top: 10px;
   }
@@ -368,7 +281,7 @@ const Desc = styled.p`
   }
 `;
 
-function Dashboard() {
+function AI() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handlePrevClick = () => {
@@ -403,30 +316,31 @@ function Dashboard() {
         </CarouselContainer>
         <Details>
           <a
-            href="https://mern-admin-5vo2.onrender.com/"
+            href="https://threejs-ai-react.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ textDecoration: "none" }}
+            style={{ textDecoration: "none", textTransform: "uppercase" }}
           >
-            <CardTitle>ADMIN ACCOUNT DASHBOARD</CardTitle>
+            <CardTitle>3D AI Shirt Generator</CardTitle>
           </a>
           <Desc>
-            Delivered impressive results in streamlining order processing for an
-            online store. Utilized cutting-edge tech tools like Mui, Redux,
-            Axios, Firebase, React Router, Recharts, and more. Slashed
-            processing time by 50%, boosting customer satisfaction. Proven
-            problem solver with a track record of impactful solutions.
+            This project is an immersive web application that empowers users to
+            customize 3D shirt models using a powerful tech stack. The frontend
+            is built using Vite, React, and Tailwind CSS, while the backend is
+            developed with Express and Node.js. Additionally, the TryLeap AI API
+            is seamlessly integrated to generate dynamic shirt designs and
+            colors.
           </Desc>
           <ProjectLinks>
             <a
-              href="https://github.com/Nuellity/e-commerce-fullstack"
+              href="https://github.com/Nuellity/Threejs-AI-React"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Link src="./images/github.png" />
             </a>
             <a
-              href="https://mern-admin-5vo2.onrender.com/"
+              href="https://threejs-ai-react.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -439,4 +353,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default AI;
